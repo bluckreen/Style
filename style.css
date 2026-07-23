@@ -125,3 +125,47 @@ main {
   background-color: #4338ca;
 }
 
+/* Navigation Layout */
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+/* Form Layout */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Responsive Web Design */
+@media (max-width: 768px){
+
+    /* Navigation */
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Main Container */
+    main{
+        width: 95%;
+    }
+
+    /* Form Container */
+    .form-container{
+        width: 100%;
+    }
+
+    /* Responsive Table */
+    .data-table{
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+
